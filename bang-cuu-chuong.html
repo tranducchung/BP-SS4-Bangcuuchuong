@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>VHTM</title>
+</head>
+<body>
+<script>
+    let bang = "<table border='1' cellpadding='5' cellspacing='0'>";
+    let i;
+    let j;
+    for (i=1;i<=9;i++){
+        bang = bang + "<tr>";
+        for (j=2;j<=9;j++){
+            bang = bang + "<td>"+ i + "x" + j + "=" + i*j  + "</td>";
+        }
+        bang = bang + "</tr>"
+    }
+    document.write(bang)
+</script>
+</body>
